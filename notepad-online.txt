@@ -1,0 +1,152 @@
+
+
+
+############### index.html ###############
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2ullyScan</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e6e6e6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4b0082;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2e0854;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            margin: 20px;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            border: 1px solid #4b0082;
+        }
+        .projects, .contact {
+            padding: 20px;
+        }
+        .manga-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .manga-item {
+            background-color: #2e0854;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .manga-item a {
+            color: #e6e6e6;
+            text-decoration: none;
+        }
+        .manga-item a:hover {
+            text-decoration: underline;
+        }
+        .manga-page {
+            padding: 20px;
+        }
+        .manga-page h2 {
+            color: #fff;
+        }
+        .chapter-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .chapter-list li {
+            background-color: #4b0082;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .chapter-list li a {
+            color: #e6e6e6;
+            text-decoration: none;
+        }
+        .chapter-list li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #4b0082;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A2ullyScan</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div id="home" class="search-bar">
+        <input type="text" placeholder="Buscar Mangá...">
+    </div>
+    <div class="manga-list">
+        <!-- Exemplo de um item de mangá -->
+        <div class="manga-item">
+            <a href="#manga-page">Nome do Mangá</a>
+        </div>
+    </div>
+    <div id="projects" class="projects">
+        <h2>Projetos Atuais</h2>
+        <ul>
+            <li>Mangá 1</li>
+            <li>Mangá 2</li>
+            <!-- Adicione mais projetos aqui -->
+        </ul>
+    </div>
+    <div id="manga-page" class="manga-page">
+        <h2>Nome do Mangá</h2>
+        <p>Descrição do mangá...</p>
+        <ul class="chapter-list">
+            <li><a href="#">Capítulo 1</a></li>
+            <li><a href="#">Capítulo 2</a></li>
+            <!-- Adicione mais capítulos aqui -->
+        </ul>
+    </div>
+    <div id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Envie suas sugestões para: <a href="mailto:liveenniab2@gmail.com">liveenniab2@gmail.com</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 A2ullyScan. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
